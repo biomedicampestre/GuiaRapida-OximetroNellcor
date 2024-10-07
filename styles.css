@@ -1,0 +1,159 @@
+/* General */
+body {
+    font-family: 'Georgia', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+/* Colores */
+:root {
+    --rosa: #ea787e;
+    --gris-oxford: #3a3a3a;
+    --azul-: #504F61;
+    --fondo-rosado-suave: #ffd3d3;
+    --blanco: #e6e7e8;
+    --fucsia: #7e0642;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--rosa);
+    padding: 20px;
+    color: var(--blanco);
+}
+
+header .logo {
+    flex: 0 0 auto; /* Mantiene el logo en su tamaño original */
+}
+
+header .logo img {
+    width: 130px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+header .titulo {
+    flex: 1; /* Toma el espacio restante */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    min-width: 200px; /* Asegura que el título tenga un ancho mínimo */
+}
+
+header .titulo h1 {
+    font-size: 19px;
+    color: var(--azul-);
+    margin: 0; /* Elimina margen para mejor alineación */
+}
+
+/* Secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--gris-oxford);
+   
+}
+
+/* Fondos */
+.descripcion {
+    background-color: var(--azul-);
+    color: var(--blanco);
+    text-align: justify;
+   
+}
+.ext{
+    background-color: #333333;
+    text-align: right;
+    display: flex;
+    color: #e6e7e8;
+    padding: 2px;
+}
+
+.ext p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.partes {
+    background-color: var(--fondo-rosado-suave);
+}
+
+.guia-uso {
+    background-color: var(--gris-oxford);
+    color: var(--blanco);
+    border: 7px double beige; 
+}
+.cuadro-texto2{ 
+    border: 2px double var(--gris-oxford); 
+    padding: 15px;
+    border-radius: 30px;
+    background-color: beige;
+    color: var(--gris-oxford);
+
+}
+.titulo2 {
+    background-color: var(--fucsia);
+    border: 7px double rgba(255, 243, 228, 0.959); /* Borde doble para destacar */
+    color: beige
+}
+
+/* Estilos de cuadros de texto */
+.cuadro-texto {
+    border: 2px double var(--gris-oxford); /* Borde simple */
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--blanco);
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Vista de las partes del equipo */
+.vista {
+    margin-bottom: 20px;
+}
+
+.vista h3 {
+    color: var(--azul-);
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--gris-oxford);
+    color: var(--blanco);
+    padding: 10px;
+}
+
+/* Adaptación a la pantalla */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; /* Mantiene la dirección en fila */
+        padding: 15px;
+    }
+
+    header .titulo {
+        margin: 0 auto; /* Centra el título cuando la pantalla es pequeña */
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .extension{
+        text-align: right;
+        color: var(--blanco);
+        background-color: #3a3a3a;
+        padding: 10px;
+    }
+}
