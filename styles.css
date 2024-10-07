@@ -6,7 +6,31 @@ body {
     background-color: #f4f4f4;
     color: #333333;
 }
+.tablainicial {
+    width: 100%; /* Tamaño para la tabla */
+    margin-left: 0; /* Alinea la tabla a la izquierda */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: var(--rosa);
+}
 
+table {
+    width: 50%; /* Para que la tabla ocupe todo el ancho del div */
+    border-collapse: collapse; /* Quita los espacios entre bordes */
+   
+}
+
+td {
+    border: 1px solid gray; /* Color del borde */
+    padding: 0px; /* Espaciado interno */
+    font-size: 10px; /* Texto de tamaño pequeño */
+    text-align: left; /* Alineación a la izquierda */
+    background-color: var(--fondo-rosado-suave); /* Fondo blanco para las celdas */
+}
+
+tr:nth-child(even) {
+    background-color: var(--fondo-rosado-suave); /* Color de fondo para filas pares */
+}
 /* Colores */
 :root {
     --rosa: #ea787e;
