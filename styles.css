@@ -11,7 +11,7 @@ body {
     margin-left: 0; /* Alinea la tabla a la izquierda */
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: var(--rosa);
+    background-color: var(--fondo-rosado-suave);
 }
 
 table {
